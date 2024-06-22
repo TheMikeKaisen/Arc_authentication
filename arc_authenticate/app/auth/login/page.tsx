@@ -1,10 +1,10 @@
 import LoginForm from '@/components/auth/login-form'
 import React from 'react'
 
-const LoginPage = () => {
+const RegisterPage = () => {
   return (
     <LoginForm />
   )
 }
 
-export default LoginPage
+export default RegisterPage
