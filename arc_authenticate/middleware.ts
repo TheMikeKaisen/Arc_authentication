@@ -17,10 +17,10 @@ export default auth((req) => {
   const isApiAuthRoute = nextUrl.pathname.startsWith(apiAuthPrefix)
   const isPublicRoute = publicRoutes.includes(nextUrl.pathname)
   const isAuthRoute = authRoutes.includes(nextUrl.pathname)
-  
+
 
   if(isApiAuthRoute) {
-    return ;
+    return 
   }
 
   // if user is on authenticated route, then if user is already logged in, then redirect to settings page. if not, then he is able to access the authenticated route.

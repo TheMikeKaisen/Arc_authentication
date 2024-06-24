@@ -33,13 +33,20 @@ const LoginForm = () => {
   });
   const onSubmit = (values: z.infer<typeof LoginSchema>) => {
     console.log(values);
+    setError("")
+    setSuccess("")
 
     // server action
     startTransition(() => {
       login(values)
       .then((data) =>{
-        setError(data.error)
-        setSuccess(data.success)
+        if(data?.error){
+          setError(data.error)
+        }
+        if(data?.success){
+          setSuccess(data.success)
+        }
+          
       })
     });
   };

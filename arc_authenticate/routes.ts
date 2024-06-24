@@ -6,7 +6,6 @@
 
 export const publicRoutes = [
     '/', 
-    '/settings'
 ]
 
 /**
@@ -32,4 +31,4 @@ export const apiAuthPrefix = '/api/auth'
  * @type {string}
  */ 
 
-export const DEFAULT_LOGIN_REDIRECT = '/setting'
+export const DEFAULT_LOGIN_REDIRECT = '/settings'
